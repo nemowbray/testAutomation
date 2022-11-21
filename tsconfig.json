@@ -1,0 +1,17 @@
+{
+    "ts-node": {
+      "transpileOnly": true
+    },
+    "compilerOptions": {
+      "baseUrl": "ui_automation",
+      "target": "ESNext",
+      "module": "CommonJS",
+      "strict": true,
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "paths": {
+        "@utils/*": ["utils/*"]
+      }
+    },
+    "exclude": ["node_modules"]
+  }
