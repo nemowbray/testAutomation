@@ -1,0 +1,20 @@
+import { chromium } from "@playwright/test";
+import LoginPage from "./ui_automation/pages/adminPage.page";
+import Env from "./ui_automation/utils/environment";
+
+async function globalSetup() {
+  const browser = await chromium.launch();
+
+  const adminPage = await browser.newPage();
+  //Log in steps for submitter portal
+  const adminLogin = new LoginPage(adminPage);
+  await adminPage.goto(Env.home as string);
+  await adminLogin.authenticate(Env.username as string, Env.password as string);
+  await adminPage
+    .context()
+    .storageState({ path: "./storage-state/admin-storage-state.json" });
+
+  await browser.close();
+}
+
+export default globalSetup;

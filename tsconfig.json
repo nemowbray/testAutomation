@@ -10,7 +10,9 @@
       "resolveJsonModule": true,
       "sourceMap": true,
       "paths": {
-        "@utils/*": ["utils/*"]
+        "@utils/*": ["utils/*"],
+        "@data/*": ["data/*"],
+        "@pages/*": ["pages/*"]
       }
     },
     "exclude": ["node_modules"]

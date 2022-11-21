@@ -1,12 +1,14 @@
 {
   "name": "testautomation",
   "version": "1.0.0",
-  "description": "TDS Challenge project will include testing for a fictional bed and breakfast.",
+  "description": "This project will include testing for a fictional bed and breakfast.",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nemowbray/testAutomation.git"
@@ -18,6 +20,7 @@
     "url": "https://github.com/nemowbray/testAutomation/issues"
   },
   "homepage": "https://github.com/nemowbray/testAutomation#readme",
+  
   "devDependencies": {
     "@playwright/test": "^1.28.0",
     "playwright": "^1.28.0"

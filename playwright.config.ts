@@ -33,7 +33,7 @@ const config: PlaywrightTestConfig = {
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
 
   use: {
-    headless: true,
+    headless: false,
     baseURL: Env.home,
     trace: "retain-on-failure",
     screenshot: "only-on-failure",
