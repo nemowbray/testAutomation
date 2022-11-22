@@ -47,6 +47,10 @@ test.describe("User can enter contact details and admin user can see and read it
       page.getByText(formData.name + homePage.currentTimeInMilliseconds)
     ).toHaveCount(1);
     await homePage.selectMessages.click();
+    await expect(page.getByText(formData.name)).toBeVisible;
+    await expect(page.getByText(formData.email)).toBeVisible;
+    await expect(page.getByText(formData.phoneNumber)).toBeVisible;
+    await expect(page.getByText(formData.subject)).toBeVisible;
     await expect(page.getByText(formData.message)).toBeVisible;
   });
 });
