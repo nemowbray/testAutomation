@@ -1,4 +1,6 @@
-Install NPM
+# Install NPM
+
+---
 
 npm install
 Note: If there are any vulnerabilities you will need to run the following command: npm audit fix
@@ -11,8 +13,9 @@ Note: If you install playwright after pulling the code into VS Code you will nee
 
 # npm commands
 
-To run playwright tests -
-npx playwright test
+---
+
+To run tests use npm test in the terminal
 
 ### General Info
 
@@ -28,13 +31,10 @@ A list of technologies used within the project:
 
 - [@playwright/test]: Version 1.17.2
 - [playwright]: Version 1.28.0
-- [Library name](https://example.com): Version 1234
 
 ## Installation
 
 ---
-
-A little intro about the installation.
 
 ```
 $ git clone https://github.com/nemowbray/testAutomation.git
